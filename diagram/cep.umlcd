@@ -1,0 +1,896 @@
+{
+  "cells": [
+    {
+      "allowConfiguration": false,
+      "angle": 0,
+      "apiPath": "${webRoot}/raml/${packageRoot?replace(\".\", \"/\")}/api.raml",
+      "async": {
+        "batchSize": 500
+      },
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-attrs-text": {
+          "fill": "#666",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-attrs-value": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-methods-text": {
+          "fill": "#0066FF",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "stroke": "#C2C2C2",
+          "stroke-width": 1
+        },
+        ".uml-class-name-text": {
+          "fill": "#000",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 12,
+          "font-weight": "bold"
+        }
+      },
+      "chkApi": false,
+      "dataSource": "jdbc/main",
+      "disableCache": false,
+      "id": "paperCell",
+      "methods": [],
+      "namespace": "cep",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "queries": [],
+      "runtimeClass": "cronos.widgets.joint.uml.Paper",
+      "size": {
+        "height": 0,
+        "width": 0
+      },
+      "sqlDebugging": false,
+      "type": "basic.Rect",
+      "visionLikePackage": false,
+      "z": 1
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "cidade:java.lang.String",
+        "estado:estado"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\ncidade\nestado\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 147,
+          "text": "Texto\nTexto\nestado\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "cidade"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "cidade",
+          "type": "java.lang.String",
+          "dbName": "cidade",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Cidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "estado",
+          "type": "estado",
+          "dbName": "fk_estado",
+          "label": "Estado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false,
+          "idIndex": false,
+          "useOuterJoin": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "99db1f59-7d0d-4d8e-b937-c4336c69ae8c",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "cidade",
+      "position": {
+        "x": 712,
+        "y": 306
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 130,
+        "width": 195
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 4
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "estado:java.lang.String",
+        "pais:pais"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\nestado\npais\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 156,
+          "text": "Texto\nTexto\npais\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "estado"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "estado",
+          "type": "java.lang.String",
+          "dbName": "estado",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Estado",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "pais",
+          "type": "pais",
+          "dbName": "fk_pais",
+          "label": "Pais",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false,
+          "idIndex": false,
+          "useOuterJoin": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "6bbe291f-4990-4973-b561-1a8e947fe1b5",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "estado",
+      "position": {
+        "x": 708,
+        "y": 112
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 130,
+        "width": 195
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 3
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "pais:java.lang.String"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 60,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\npais\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 156,
+          "text": "Texto\nTexto\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,100)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "pais"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "pais",
+          "type": "java.lang.String",
+          "dbName": "pais",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Pais",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        }
+      ],
+      "generateView": "Auto",
+      "id": "75cda785-491a-499b-903d-d110fb08ce23",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "pais",
+      "position": {
+        "x": 420,
+        "y": 106
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 120,
+        "width": 195
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 2
+    },
+    {
+      "angle": 0,
+      "attributes": [
+        "id:java.lang.String",
+        "pessoa:java.lang.String",
+        "cidade:cidade"
+      ],
+      "attrs": {
+        ".uml-class-attrs-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 80,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,40)"
+        },
+        ".uml-class-attrs-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": "* id\npessoa\ncidade\n"
+        },
+        ".uml-class-attrs-value": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "ref-x": 148,
+          "text": "Texto\nTexto\ncidade\n"
+        },
+        ".uml-class-methods-rect": {
+          "fill": "#F0F0F0",
+          "height": 20,
+          "stroke": "#C2C2C2",
+          "stroke-width": 1,
+          "transform": "translate(0,120)"
+        },
+        ".uml-class-methods-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "font-size": 11,
+          "text": ""
+        },
+        ".uml-class-name-rect": {
+          "fill": "#F0F0F0",
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "height": 40,
+          "stroke": "#C2C2C2",
+          "transform": "translate(0,0)"
+        },
+        ".uml-class-name-text": {
+          "font-family": "\u0027Fira Sans\u0027, sans-serif",
+          "text": "pessoa"
+        }
+      },
+      "audit": false,
+      "fields": [
+        {
+          "name": "id",
+          "type": "java.lang.String",
+          "dbName": "id",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "UUID.randomUUID().toString().toUpperCase()",
+          "label": "Id",
+          "mask": "",
+          "isPrimaryKey": true,
+          "isUniqueKey": false,
+          "isNullable": false,
+          "pkType": "UUID",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "pessoa",
+          "type": "java.lang.String",
+          "dbName": "pessoa",
+          "dbLength": "",
+          "dbPrecision": "",
+          "dbScale": "",
+          "dbDefaultValue": "",
+          "label": "Pessoa",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "pkType": "",
+          "multitenantContext": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "sequence": "",
+          "isCascade": false,
+          "isVersion": false,
+          "storageId": "",
+          "storageKey": "",
+          "storageType": "",
+          "storageSecret": "",
+          "foreignKeyName": "",
+          "joins": "",
+          "isIndex": false,
+          "useOuterJoin": false,
+          "regionAWS": ""
+        },
+        {
+          "name": "cidade",
+          "type": "cidade",
+          "dbName": "fk_cidade",
+          "label": "Cidade",
+          "mask": "",
+          "isPrimaryKey": false,
+          "isUniqueKey": false,
+          "isNullable": true,
+          "multitenantContext": "",
+          "pkType": "",
+          "jsonIgnore": false,
+          "isTransient": false,
+          "isInsertable": true,
+          "isUpdatable": true,
+          "isEncryption": false,
+          "passwordPolicy": "none",
+          "referencedColumnName": "",
+          "isSearchable": false,
+          "isCascade": false,
+          "isVersion": false,
+          "idIndex": false,
+          "useOuterJoin": false
+        }
+      ],
+      "generateView": "Auto",
+      "id": "e608932e-5ff8-4cff-82ba-24584d09f795",
+      "isRest": "true",
+      "methods": [],
+      "modelType": "Table",
+      "name": "pessoa",
+      "position": {
+        "x": 718,
+        "y": 514
+      },
+      "queries": [],
+      "realName": "",
+      "restSecurity": null,
+      "role": "Class",
+      "runtimeClass": "cronos.widgets.joint.uml.Class",
+      "size": {
+        "height": 130,
+        "width": 195
+      },
+      "swagger": false,
+      "tableName": "",
+      "tableScheme": null,
+      "type": "uml.Class",
+      "usePhysicalNames": false,
+      "z": 5
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "9ee27719-1fa1-406a-9c33-10525789e27b",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "cidade:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "99db1f59-7d0d-4d8e-b937-c4336c69ae8c"
+      },
+      "target": {
+        "id": "e608932e-5ff8-4cff-82ba-24584d09f795"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 6
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "d1ceba9c-b414-459d-a679-f3d03020b1de",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "estado:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "6bbe291f-4990-4973-b561-1a8e947fe1b5"
+      },
+      "target": {
+        "id": "99db1f59-7d0d-4d8e-b937-c4336c69ae8c"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 7
+    },
+    {
+      "associationType": "Association",
+      "attrs": {
+        ".marker-source": {
+          "d": "M 40 10 L 20 20 L 0 10 L 20 0 z",
+          "fill": "#cecece"
+        },
+        ".marker-target": {
+          "d": "",
+          "fill": ""
+        }
+      },
+      "id": "f55ca1b2-74ef-44b9-b4e3-b91700f55a0e",
+      "labels": [
+        {
+          "position": 0.9,
+          "attrs": {
+            "rect": {
+              "fill": "transparent"
+            },
+            "text": {
+              "text": "*",
+              "font-family": "Arial",
+              "font-size": "12px",
+              "fill": "#cecece"
+            }
+          }
+        }
+      ],
+      "name": null,
+      "queries": [],
+      "relationFields": [
+        "pais:target"
+      ],
+      "runtimeClass": "cronos.widgets.joint.arrow.OneToMany",
+      "source": {
+        "id": "75cda785-491a-499b-903d-d110fb08ce23"
+      },
+      "target": {
+        "id": "6bbe291f-4990-4973-b561-1a8e947fe1b5"
+      },
+      "type": "uml.Composition",
+      "vertices": [],
+      "z": 8
+    }
+  ],
+  "selectedGroup": "",
+  "groups": [
+    {
+      "name": "",
+      "id": "fd6c4578-a53e-4d2f-9f75-62a03bd6d65f",
+      "cells": [
+        "6bbe291f-4990-4973-b561-1a8e947fe1b5",
+        "75cda785-491a-499b-903d-d110fb08ce23",
+        "99db1f59-7d0d-4d8e-b937-c4336c69ae8c",
+        "e608932e-5ff8-4cff-82ba-24584d09f795"
+      ],
+      "groupPositions": []
+    }
+  ]
+}

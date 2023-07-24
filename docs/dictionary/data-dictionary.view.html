@@ -1,0 +1,1225 @@
+<html>
+<head>
+    <title>Data Dictionary</title>
+</head>
+<body>
+<button id="print-button" onclick="printPage();">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAMAAADXqc3KAAAAAXNSR0IB2cksfwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAMlQTFRFRERARERAPkJFNT9NND9ONT9ONT9NNT9OMz9PMz9PMz9PND9OND9OMz9PND9OND9OMz9PMz9OMz9PMz9PMz9PMz9PND9PMz9PMz9PND9PMz9PND9OMz9PMz9PND9PMz9PMz9PMz9PMz9PMz9PND9OMz9PMz9PMz9PN0BMND9PMz9PND9PND9ON0BMMz9PMz9PO0FINT9NNT9NNT9NNkBMND9PMz9PND9PND9OQENDOUBJOEBKOUBKNT9OMz9PMz9PND9ONT9ONUBNsUnMNQAAAEN0Uk5TAwQGJi4uIi/pzeQvP7xHcr1y9/n/RIiK4IqIO7Wzo6O75rrQT2PAwRNtcXFqEr9XCCQlIxV9goJ5BQwMDCri2SomIndpWs8AAADRSURBVHicnZLnDoIwEIBb3KOIcgpuFBUVByoucL//Q1mgkELkj9+l6760SdtDKBWMsZDJ5mj4XS6bF2gqEIViiaNciUSVYA5S/V+ItZiQ6iITDTku5AYTAPGjALyzmi0FQFUYbRoqgNLpoh78pI9IMBmIjGGw1kIxCu89SogkqYIgLW3H2Bv0CYfuZcZoOjMMneD5YmkuTdNcrbGkG8ZmGz6itdv7HKzE69rH05nG6WInxNVxXde5uc6VF/cH/7XPVySEd1QJND6sGMJiCVqU+QImGB+d3G9GMQAAAABJRU5ErkJggg==">
+    <span>Impressão</span>
+</button>
+<h1>Diagramas de Dados</h1>
+
+
+ <h2>1. app.umlcd</h2>
+
+      <h3 id="fabe0aea-c05d-44a4-a87c-2e2c0a97e994">1. Application - (Tabela no Banco de Dados: APPLICATION)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>name</td>
+                <td>name</td>
+                <td>java.lang.String</td>
+                <td>Name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="56d9e678-741d-41e6-9b24-bccc58de1598">2. ApplicationUser - (Tabela no Banco de Dados: APPLICATION_USER)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td></td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>application</td>
+                <td>application_id</td>
+                <td>Application</td>
+                <td>Application</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>user</td>
+                <td>user_id</td>
+                <td>User</td>
+                <td>User</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="b194a533-61d6-4661-b9da-ff80ce2835f9">3. AuditLog - (Tabela no Banco de Dados: AUDIT_LOG)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.Integer</td>
+                <td>Id</td>
+                <td></td>
+                <td></td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>type</td>
+                <td>type</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Tipo<br /> <strong>en_US: </strong>Type</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>command</td>
+                <td>command</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Comando<br /> <strong>en_US: </strong>Command</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">4</td>
+                <td>date</td>
+                <td>dateCreated</td>
+                <td>java.util.Date</td>
+                <td><strong>pt_BR: </strong>Data<br /> <strong>en_US: </strong>Date</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">5</td>
+                <td>objectData</td>
+                <td>objectData</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Data do objeto<br /> <strong>en_US: </strong>Object data</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">6</td>
+                <td>user</td>
+                <td>userName</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Usuário<br /> <strong>en_US: </strong>User</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">7</td>
+                <td>host</td>
+                <td>host</td>
+                <td>java.lang.String</td>
+                <td>Host</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">8</td>
+                <td>agent</td>
+                <td>agent</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Agente<br /> <strong>en_US: </strong>Agent</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">9</td>
+                <td>server</td>
+                <td>server</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Servidor<br /> <strong>en_US: </strong>Server</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">10</td>
+                <td>affectedFields</td>
+                <td>affectedFields</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Campos afetados<br /> <strong>en_US: </strong>Affected fields</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">11</td>
+                <td>category</td>
+                <td>category</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Categoria<br /> <strong>en_US: </strong>Category</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">12</td>
+                <td>application</td>
+                <td>application</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Aplicação<br /> <strong>en_US: </strong>Application</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">13</td>
+                <td>error</td>
+                <td>error</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Erro<br /> <strong>en_US: </strong>Error</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="d92238a3-a37d-4cc6-a543-d0687dc207cd">4. Device - (Tabela no Banco de Dados: DEVICE)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>token</td>
+                <td>token</td>
+                <td>java.lang.String</td>
+                <td>Token</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>platform</td>
+                <td>platform</td>
+                <td>java.lang.String</td>
+                <td>Platform</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">4</td>
+                <td>model</td>
+                <td>model</td>
+                <td>java.lang.String</td>
+                <td>Model</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">5</td>
+                <td>platformVersion</td>
+                <td>platformVersion</td>
+                <td>java.lang.String</td>
+                <td>Platform Version</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">6</td>
+                <td>appName</td>
+                <td>appName</td>
+                <td>java.lang.String</td>
+                <td>App Name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">7</td>
+                <td>appVersion</td>
+                <td>appVersion</td>
+                <td>java.lang.String</td>
+                <td>App Version</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="2016ad54-a0f9-4337-ad10-694a48f0435c">5. Login - (Tabela no Banco de Dados: LOGIN)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Id<br /> <strong>en_US: </strong>Id</td>
+                <td></td>
+                <td></td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>loginProvider</td>
+                <td>login_provider</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Provedor de login<br /> <strong>en_US: </strong>Login provider</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>providerDisplayName</td>
+                <td>provider_display_name</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Nome de exibição do provedor<br /> <strong>en_US: </strong>Provider display name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">4</td>
+                <td>providerKey</td>
+                <td>provider_key</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Chave do provedor<br /> <strong>en_US: </strong>Provider Key</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">5</td>
+                <td>user</td>
+                <td>user_id</td>
+                <td>User</td>
+                <td><strong>pt_BR: </strong>Usuário<br /> <strong>en_US: </strong>User</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="dcc00b32-aa33-47bd-bc4d-91da88f25cbc">6. Role - (Tabela no Banco de Dados: ROLE)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Id<br /> <strong>en_US: </strong>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>builtIn</td>
+                <td>builtin</td>
+                <td>java.lang.Boolean</td>
+                <td><strong>pt_BR: </strong>Construído em<br /> <strong>en_US: </strong>Built in</td>
+                <td></td>
+                <td>false</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>membershipEnabled</td>
+                <td>membership_enabled</td>
+                <td>java.lang.Boolean</td>
+                <td><strong>pt_BR: </strong>Associação habilitada<br /> <strong>en_US: </strong>Membership enabled</td>
+                <td></td>
+                <td>true</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">4</td>
+                <td>name</td>
+                <td>name</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Nome<br /> <strong>en_US: </strong>Name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">5</td>
+                <td>normalizedName</td>
+                <td>normalized_name</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Nome normalizado<br /> <strong>en_US: </strong>Normalized name</td>
+                <td></td>
+                <td>""</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">6</td>
+                <td>application</td>
+                <td>application_id</td>
+                <td>Application</td>
+                <td>Application</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="53b97115-f8a3-4221-9ce6-bad2672b8bd5">7. RoleSecurable - (Tabela no Banco de Dados: ROLE_SECURABLE)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>role</td>
+                <td>role_id</td>
+                <td>Role</td>
+                <td>Role</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>securable</td>
+                <td>securable_id</td>
+                <td>Securable</td>
+                <td>Securable</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="4cbe47fe-4f4b-43e9-960b-4b5cc2633aef">8. Securable - (Tabela no Banco de Dados: SECURABLE)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td></td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>name</td>
+                <td>name</td>
+                <td>java.lang.String</td>
+                <td>Name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>application</td>
+                <td>application_id</td>
+                <td>Application</td>
+                <td>Application</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="fbe4a477-8332-4235-a9a2-5db4a56fa3d0">9. User - (Tabela no Banco de Dados: USER)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Id<br /> <strong>en_US: </strong>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>accessFailedCount</td>
+                <td>access_failed_count</td>
+                <td>java.lang.Integer</td>
+                <td><strong>pt_BR: </strong>Quantidade de falhas <br /> <strong>en_US: </strong>Access failed count</td>
+                <td></td>
+                <td>0</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>email</td>
+                <td>email</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Email<br /> <strong>en_US: </strong>Email</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">4</td>
+                <td>emailConfirmed</td>
+                <td>email_confirmed</td>
+                <td>java.lang.Boolean</td>
+                <td><strong>pt_BR: </strong>Email confirmado<br /> <strong>en_US: </strong>Email confirmed</td>
+                <td></td>
+                <td>true</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">5</td>
+                <td>lockoutEnabled</td>
+                <td>lockout_enabled</td>
+                <td>java.lang.Boolean</td>
+                <td><strong>pt_BR: </strong>Bloqueio habilitado<br /> <strong>en_US: </strong>Lockout enabled</td>
+                <td></td>
+                <td>false</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">6</td>
+                <td>lockoutEnd</td>
+                <td>lockout_end</td>
+                <td>java.util.Date</td>
+                <td><strong>pt_BR: </strong>Fim do bloqueio<br /> <strong>en_US: </strong>Lockout end</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">7</td>
+                <td>name</td>
+                <td>name</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Nome<br /> <strong>en_US: </strong>Name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">8</td>
+                <td>normalizedEmail</td>
+                <td>normalized_email</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Email normalized<br /> <strong>en_US: </strong>Normalized email</td>
+                <td></td>
+                <td>""</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+            </tr>
+            <tr>
+                <td class="centered">9</td>
+                <td>normalizedUserName</td>
+                <td>normalized_user_name</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Usuário normalizado<br /> <strong>en_US: </strong>Normalized username</td>
+                <td></td>
+                <td>""</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+            </tr>
+            <tr>
+                <td class="centered">10</td>
+                <td>password</td>
+                <td>password</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Senha<br /> <strong>en_US: </strong>Password</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">11</td>
+                <td>phoneNumber</td>
+                <td>phone_number</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Telefone <br /> <strong>en_US: </strong>Phone Number</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">12</td>
+                <td>phoneNumberConfirmed</td>
+                <td>phone_number_confirmed</td>
+                <td>java.lang.Boolean</td>
+                <td><strong>pt_BR: </strong>Telefone confirmado<br /> <strong>en_US: </strong>Phone number confirmed</td>
+                <td></td>
+                <td>true</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">13</td>
+                <td>securityStamp</td>
+                <td>security_stamp</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Segurança<br /> <strong>en_US: </strong>Security</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">14</td>
+                <td>twoFactorEnabled</td>
+                <td>two_factor_enabled</td>
+                <td>java.lang.Boolean</td>
+                <td><strong>pt_BR: </strong>Dois fatores habilitados<br /> <strong>en_US: </strong>Two factor enabled</td>
+                <td></td>
+                <td>false</td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">15</td>
+                <td>userName</td>
+                <td>user_name</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Nome do usuário<br /> <strong>en_US: </strong>Username</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">16</td>
+                <td>theme</td>
+                <td>theme</td>
+                <td>java.lang.String</td>
+                <td><strong>pt_BR: </strong>Tema<br /> <strong>en_US: </strong>Theme</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">17</td>
+                <td>picture</td>
+                <td>picture</td>
+                <td>byte[]</td>
+                <td><strong>pt_BR: </strong>Imagem<br /> <strong>en_US: </strong>Picture</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="36b875ac-204a-4346-82e4-aabbd2c6b202">10. UserRole - (Tabela no Banco de Dados: USER_ROLE)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>role</td>
+                <td>role_id</td>
+                <td>Role</td>
+                <td>Role</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>user</td>
+                <td>user_id</td>
+                <td>User</td>
+                <td>User</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="e35a650f-29ee-4683-8c1c-5cc61a955ddf">11. UserSecurable - (Tabela no Banco de Dados: USER_SECURABLE)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>securable</td>
+                <td>securable_id</td>
+                <td>Securable</td>
+                <td>Securable</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>user</td>
+                <td>user_id</td>
+                <td>User</td>
+                <td>User</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="8d58afde-52b6-46f5-acc9-3fc581c67b8a">12. Usuario - (Tabela no Banco de Dados: Usuario)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>name</td>
+                <td>name</td>
+                <td>java.lang.String</td>
+                <td>Name</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+      <h3 id="2b76b50a-bb57-4354-a653-b71b1450ebff">13. View - (Tabela no Banco de Dados: VIEW)</h3>
+        <table>
+            <tr>
+                <th class="centered">#</th>
+                <th class="centered">Nome do campo</th>
+                <th class="centered">Coluna do Banco</th>
+                <th class="centered">Tipo do campo</th>
+                <th class="centered">Rótulo</th>
+                <th class="centered">Máscara</th>
+                <th class="centered">Valor padrão</th>
+                <th class="centered">Chave Primária</th>
+                <th class="centered">Não Nulo</th>
+                <th class="centered">Chave Única</th>
+            </tr>
+
+            <tr>
+                <td class="centered">1</td>
+                <td>id</td>
+                <td>id</td>
+                <td>java.lang.String</td>
+                <td>Id</td>
+                <td></td>
+                <td>UUID.randomUUID().toString().toUpperCase()</td>
+                <td class="centered">X</td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">2</td>
+                <td>securable</td>
+                <td>securable_id</td>
+                <td>Securable</td>
+                <td>Securable</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">3</td>
+                <td>pattern</td>
+                <td>pattern</td>
+                <td>java.lang.String</td>
+                <td>Pattern</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">4</td>
+                <td>getMethodAllowed</td>
+                <td>getMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Get Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">5</td>
+                <td>headMethodAllowed</td>
+                <td>headMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Head Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">6</td>
+                <td>putMethodAllowed</td>
+                <td>putMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Put Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">7</td>
+                <td>postMethodAllowed</td>
+                <td>postMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Post Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">8</td>
+                <td>patchMethodAllowed</td>
+                <td>patchMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Patch Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">9</td>
+                <td>deleteMethodAllowed</td>
+                <td>deleteMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Delete Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">10</td>
+                <td>optionsMethodAllowed</td>
+                <td>optionsMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Options Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">11</td>
+                <td>traceMethodAllowed</td>
+                <td>traceMethodAllowed</td>
+                <td>java.lang.Boolean</td>
+                <td>Trace Method Allowed</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered">X</td>
+                <td class="centered"></td>
+            </tr>
+            <tr>
+                <td class="centered">12</td>
+                <td>application</td>
+                <td>application_id</td>
+                <td>Application</td>
+                <td>Application</td>
+                <td></td>
+                <td></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+                <td class="centered"></td>
+            </tr>
+        </table>
+
+</body>
+<style>
+    html {
+        margin: 20px;
+    }
+
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+
+    table {
+        table-layout: fixed;
+        width: 100%;
+    }
+
+    table td {
+        word-wrap: break-word; /* All browsers since IE 5.5+ */
+        overflow-wrap: break-word; /* Renamed property in CSS3 draft spec */
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    #print-button {
+        display: flex;
+        align-items: center;
+    }
+    #print-button span{
+        margin-left: 5px;
+    }
+</style>
+
+<script>
+    function printPage() {
+        var x = document.getElementById("print-button");
+        x.style.display = "none";
+        window.print();
+        x.style.display = "flex";
+    }
+</script>
+</html>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly audit="false" blocklyType="WEB" bpmnAble="false" formTarget="" functionCategory="" library="false" linkHelp="" multilayer="false" resourceType="JS" ruleDescription="Bloco" ruleName="Bloco" ruleSynchronous="false" ruleTimeout="" ruleType="I" showAsFunction="false" soap="false" swagger="false">
+  <metadata scale="1" scrollx="475.09999999999957" scrolly="-49.499999999999886" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block asynccall="false" colour="#995ba5" datasourcetype="" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-350" y="130">
+    <field customattributes="" name="NAME">Executar</field>
+    <statement name="STACK">
+      <block asynccall="false" colour="#0088ee" datasourcetype="" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5p3FsV`?@u4K5S|xGFs|" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field customattributes="" name="VAR">item</field>
+      </block>
+    </statement>
+  </block>
+</blockly>
