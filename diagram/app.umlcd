@@ -867,7 +867,7 @@
         ".uml-class-attrs-value": {
           "font-family": "\u0027Fira Sans\u0027, sans-serif",
           "font-size": 11,
-          "ref-x": 159,
+          "ref-x": 160,
           "text": "Texto\nTexto\nCargo\n"
         },
         ".uml-class-methods-rect": {
@@ -1029,7 +1029,7 @@
       "tableScheme": null,
       "type": "uml.Class",
       "usePhysicalNames": false,
-      "z": 25
+      "z": 27
     },
     {
       "angle": 0,
@@ -4857,24 +4857,10 @@
       ],
       "groupPositions": [
         {
-          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
           "position": {
-            "x": 1178,
+            "x": 647,
             "y": 649
-          }
-        },
-        {
-          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
-          "position": {
-            "x": 403,
-            "y": 354
-          }
-        },
-        {
-          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
-          "position": {
-            "x": 66,
-            "y": 248
           }
         },
         {
@@ -4885,45 +4871,10 @@
           }
         },
         {
-          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
           "position": {
-            "x": 92,
-            "y": 600
-          }
-        },
-        {
-          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
-          "position": {
-            "x": 380,
+            "x": 943,
             "y": 649
-          }
-        },
-        {
-          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
-          "position": {
-            "x": 924,
-            "y": 278
-          }
-        },
-        {
-          "idCell": "a483ab0b-4c77-461b-bc60-0859ea009f98",
-          "position": {
-            "x": 1176,
-            "y": 34
-          }
-        },
-        {
-          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
-          "position": {
-            "x": 50,
-            "y": 33
-          }
-        },
-        {
-          "idCell": "9c1a79d5-45f7-4177-829d-8c6cbb788283",
-          "position": {
-            "x": 932,
-            "y": 82
           }
         },
         {
@@ -4934,10 +4885,10 @@
           }
         },
         {
-          "idCell": "e35a650f-29ee-4683-8c1c-5cc61a955ddf",
+          "idCell": "4cbe47fe-4f4b-43e9-960b-4b5cc2633aef",
           "position": {
-            "x": 647,
-            "y": 649
+            "x": 403,
+            "y": 354
           }
         },
         {
@@ -4948,10 +4899,38 @@
           }
         },
         {
-          "idCell": "36b875ac-204a-4346-82e4-aabbd2c6b202",
+          "idCell": "53b97115-f8a3-4221-9ce6-bad2672b8bd5",
           "position": {
-            "x": 943,
+            "x": 380,
             "y": 649
+          }
+        },
+        {
+          "idCell": "9c1a79d5-45f7-4177-829d-8c6cbb788283",
+          "position": {
+            "x": 932,
+            "y": 82
+          }
+        },
+        {
+          "idCell": "fbe4a477-8332-4235-a9a2-5db4a56fa3d0",
+          "position": {
+            "x": 924,
+            "y": 278
+          }
+        },
+        {
+          "idCell": "56d9e678-741d-41e6-9b24-bccc58de1598",
+          "position": {
+            "x": 1178,
+            "y": 649
+          }
+        },
+        {
+          "idCell": "b194a533-61d6-4661-b9da-ff80ce2835f9",
+          "position": {
+            "x": 66,
+            "y": 248
           }
         },
         {
@@ -4959,6 +4938,27 @@
           "position": {
             "x": 622,
             "y": 338
+          }
+        },
+        {
+          "idCell": "a483ab0b-4c77-461b-bc60-0859ea009f98",
+          "position": {
+            "x": 1176,
+            "y": 34
+          }
+        },
+        {
+          "idCell": "2b76b50a-bb57-4354-a653-b71b1450ebff",
+          "position": {
+            "x": 92,
+            "y": 600
+          }
+        },
+        {
+          "idCell": "d92238a3-a37d-4cc6-a543-d0687dc207cd",
+          "position": {
+            "x": 50,
+            "y": 33
           }
         }
       ]
